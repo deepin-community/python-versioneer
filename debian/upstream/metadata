@@ -1,0 +1,7 @@
+Bug-Database: https://github.com/warner/python-versioneer/issues
+Bug-Submit: https://github.com/warner/python-versioneer/issues/new
+Registry:
+ - Name: conda:conda-forge
+   Entry: versioneer
+Repository: https://github.com/warner/python-versioneer.git
+Repository-Browse: https://github.com/warner/python-versioneer

@@ -1,0 +1,38 @@
+From: Boyuan Yang <byang@debian.org>
+Date: Tue, 30 Aug 2022 16:57:29 -0400
+Subject: tox.ini: Use py3 versions
+
+---
+ tox.ini | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/tox.ini b/tox.ini
+index f73bce6..ed952f1 100644
+--- a/tox.ini
++++ b/tox.ini
+@@ -40,17 +40,17 @@ commands =
+ 
+     # this creates versioneer.py in the current directory, which is used by
+     # tests
+-    python setup.py make_versioneer
+-    python -m unittest discover test
+-    python test/git/test_git.py -v
+-    python test/git/test_invocations.py -v
++    python3 setup.py make_versioneer
++    python3 -m unittest discover test
++    python3 test/git/test_git.py -v
++    python3 test/git/test_invocations.py -v
+ 
+     # this creates git_version.py, which is used by tests
+-    python setup.py make_long_version_py_git
+-    pyflakes setup.py versioneer.py git_version.py
++    python3 setup.py make_long_version_py_git
++    pyflakes3 setup.py versioneer.py git_version.py
+     # pyflakes all of src except src/git/long_header.py and src/header.py
+-    python test/run_pyflakes_src.py
+-    pyflakes test
++    python3 test/run_pyflakes_src.py
++    pyflakes3 test
+     flake8 git_version.py versioneer.py
+     pycodestyle --max-line-length=88 git_version.py versioneer.py
+     !pypy3: mypy git_version.py

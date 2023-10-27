@@ -1,0 +1,8 @@
+version=4
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%python-versioneer-$1.tar.gz%" \
+   https://github.com/python-versioneer/python-versioneer/tags \
+   (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
+
+# also distributed via PyPI
+# PyPI
+# https://pypi.debian.net/versioneer/python-versioneer-(.+)\.(?:zip|tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))

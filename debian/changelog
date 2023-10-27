@@ -1,5 +1,62 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-versioneer (0.28-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
+  * New upstream version 0.28.
+  * d/copyright: License change to Unlicense.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Bastian Germann <bage@debian.org>  Fri, 13 Jan 2023 13:08:42 +0100
+
+python-versioneer (0.23-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 0.23.
+  * debian/control:
+    + Bump Standards-Version to 4.6.1.
+    + Add git as build-test-dependency.
+  * debian/copyright: Update info.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 30 Aug 2022 16:30:30 -0400
+
+python-versioneer (0.22-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 12 Apr 2022 15:45:06 -0400
+
+python-versioneer (0.21-1) unstable; urgency=low
+
+  * Team upload.
+  * New upstream release 0.21.
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Bump debhelper from old 12 to 13.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Boyuan Yang ]
+  * Update standards version to 4.6.0, no changes needed.
+  * debian/watch: Modify monitoring URL following upstream changes.
+  * debian/control, debian/copyright: Update homepage accordingly.
+
+ -- Boyuan Yang <byang@debian.org>  Fri, 05 Nov 2021 12:53:47 -0400
+
+python-versioneer (0.18-3) unstable; urgency=medium
+
+  * Team upload.
+  * No-change source-only upload to allow testing migration.
+
+ -- Boyuan Yang <byang@debian.org>  Sun, 16 Feb 2020 11:17:32 -0500
+
+python-versioneer (0.18-2) unstable; urgency=medium
+
+  * Initial release (Closes: #950292)
+
+ -- Steffen Moeller <moeller@debian.org>  Sun, 26 Jan 2020 15:53:17 +0100
