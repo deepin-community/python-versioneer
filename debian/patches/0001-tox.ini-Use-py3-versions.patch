@@ -1,5 +1,5 @@
 From: Boyuan Yang <byang@debian.org>
-Date: Tue, 30 Aug 2022 16:57:29 -0400
+Date: Mon, 18 Dec 2023 22:53:24 -0500
 Subject: tox.ini: Use py3 versions
 
 ---
@@ -7,10 +7,10 @@ Subject: tox.ini: Use py3 versions
  1 file changed, 8 insertions(+), 8 deletions(-)
 
 diff --git a/tox.ini b/tox.ini
-index f73bce6..ed952f1 100644
+index 7c96eb3..906d768 100644
 --- a/tox.ini
 +++ b/tox.ini
-@@ -40,17 +40,17 @@ commands =
+@@ -44,17 +44,17 @@ commands =
  
      # this creates versioneer.py in the current directory, which is used by
      # tests
@@ -35,4 +35,4 @@ index f73bce6..ed952f1 100644
 +    pyflakes3 test
      flake8 git_version.py versioneer.py
      pycodestyle --max-line-length=88 git_version.py versioneer.py
-     !pypy3: mypy git_version.py
+     !pypy3: mypy git_version.py versioneer.py src/installer.py setup.py

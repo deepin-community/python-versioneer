@@ -1,3 +1,12 @@
+python-versioneer (0.29-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 0.29.
+  * debian/control: Bump Standards-Version to 4.6.2.
+  * debian/clean: Clean up the generated .tox/ directory.
+
+ -- Boyuan Yang <byang@debian.org>  Mon, 18 Dec 2023 22:50:53 -0500
+
 python-versioneer (0.28-1) unstable; urgency=medium
 
   * Team upload.
